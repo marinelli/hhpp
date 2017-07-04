@@ -1,0 +1,13 @@
+
+resolver: lts-8.21
+
+packages:
+- '.'
+
+extra-deps:
+- distributed-process-extras-0.3.2
+
+flags: {}
+
+extra-package-dbs: []
+

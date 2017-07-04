@@ -1,0 +1,58 @@
+
+name:                  hhpp
+version:               0.1.0.0
+homepage:              https://github.com/marinelli/hhpp
+license:               BSD3
+license-file:          LICENSE
+author:                Giorgio Marinelli
+maintainer:            giorgio@marinel.li
+copyright:             2017 Giorgio Marinelli
+category:              Learning Haskell
+build-type:            Simple
+cabal-version:         >=1.10
+extra-source-files:    README.md
+
+
+
+executable             ch12-first-example
+  hs-source-dirs:      src
+  main-is:             Ch12_First_Example.hs
+  default-language:    Haskell2010
+  ghc-options:         -Wall -threaded
+  build-depends:       base >= 4.7 && < 5
+                     , binary
+                     , distributed-process
+                     , distributed-process-extras
+                     , distributed-process-simplelocalnet
+                     , random
+
+
+executable             ch12-client-server
+  hs-source-dirs:      src
+  main-is:             Ch12_Client_Server.hs
+  default-language:    Haskell2010
+  ghc-options:         -Wall -threaded
+  build-depends:       base >= 4.7 && < 5
+                     , distributed-process
+                     , distributed-process-simplelocalnet
+
+
+executable             ch12-bi-directional
+  hs-source-dirs:      src
+  main-is:             Ch12_Bi_Directional.hs
+  default-language:    Haskell2010
+  ghc-options:         -Wall -threaded
+  build-depends:       base >= 4.7 && < 5
+                     , distributed-process
+                     , distributed-process-simplelocalnet
+
+
+executable             ch12-remote-exec
+  hs-source-dirs:      src
+  main-is:             Ch12_Remote_Exec.hs
+  default-language:    Haskell2010
+  ghc-options:         -Wall -threaded
+  build-depends:       base >= 4.7 && < 5
+                     , distributed-process
+                     , distributed-process-simplelocalnet
+
